@@ -1,0 +1,9 @@
+0.8.6
+R-Rcpp
+R-RcppArmadillo
+R-XML
+R-bbmle
+R-matrixStats
+R-minpack.lm
+R-plotrix
+R-shape
