@@ -3,7 +3,13 @@ R-Rcpp
 R-RcppArmadillo
 R-XML
 R-bbmle
+R-data.table
+R-httr
 R-matrixStats
 R-minpack.lm
 R-plotrix
+R-raster
+R-readxl
 R-shape
+R-sp
+R-zoo

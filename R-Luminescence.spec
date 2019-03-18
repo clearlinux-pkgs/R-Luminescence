@@ -4,35 +4,37 @@
 #
 Name     : R-Luminescence
 Version  : 0.8.6
-Release  : 9
+Release  : 10
 URL      : https://cran.r-project.org/src/contrib/Luminescence_0.8.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Luminescence_0.8.6.tar.gz
 Summary  : Comprehensive Luminescence Dating Data Analysis
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-Luminescence-lib
-Requires: R-Rcpp
-Requires: R-RcppArmadillo
-Requires: R-XML
-Requires: R-bbmle
-Requires: R-matrixStats
-Requires: R-minpack.lm
-Requires: R-plotrix
-Requires: R-shape
+Requires: R-Luminescence-lib = %{version}-%{release}
+Requires: R-data.table
+Requires: R-httr
+Requires: R-raster
+Requires: R-readxl
+Requires: R-sp
+Requires: R-zoo
 BuildRequires : R-Rcpp
 BuildRequires : R-RcppArmadillo
 BuildRequires : R-XML
 BuildRequires : R-bbmle
+BuildRequires : R-data.table
+BuildRequires : R-httr
 BuildRequires : R-matrixStats
 BuildRequires : R-minpack.lm
 BuildRequires : R-plotrix
+BuildRequires : R-raster
+BuildRequires : R-readxl
 BuildRequires : R-shape
+BuildRequires : R-sp
+BuildRequires : R-zoo
 BuildRequires : buildreq-R
 
 %description
-dating data analysis. This includes, amongst others, data import, export,
-    application of age models, curve deconvolution, sequence analysis and
-    plotting of equivalent dose distributions.
+No detailed description available
 
 %package lib
 Summary: lib components for the R-Luminescence package.
@@ -50,11 +52,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538747236
+export SOURCE_DATE_EPOCH=1552887283
 
 %install
+export SOURCE_DATE_EPOCH=1552887283
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538747236
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -89,8 +91,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Luminescence|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  Luminescence || :
 
 
 %files
