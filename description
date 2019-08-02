@@ -1,0 +1,4 @@
+A collection of various R functions for the purpose of Luminescence dating data
+analysis. This includes, amongst others, data import, export, application of
+age models, curve deconvolution, sequence analysis and plotting of equivalent
+dose distributions.
