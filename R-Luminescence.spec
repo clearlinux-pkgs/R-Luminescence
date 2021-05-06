@@ -4,7 +4,7 @@
 #
 Name     : R-Luminescence
 Version  : 0.9.11
-Release  : 33
+Release  : 34
 URL      : https://cran.r-project.org/src/contrib/Luminescence_0.9.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Luminescence_0.9.11.tar.gz
 Summary  : Comprehensive Luminescence Dating Data Analysis
@@ -18,6 +18,7 @@ Requires: R-XML
 Requires: R-bbmle
 Requires: R-data.table
 Requires: R-httr
+Requires: R-lamW
 Requires: R-magrittr
 Requires: R-matrixStats
 Requires: R-minpack.lm
@@ -67,10 +68,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1620313971
+export SOURCE_DATE_EPOCH=1620322278
 
 %install
-export SOURCE_DATE_EPOCH=1620313971
+export SOURCE_DATE_EPOCH=1620322278
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
