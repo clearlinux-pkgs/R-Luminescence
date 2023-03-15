@@ -4,7 +4,7 @@
 #
 Name     : R-Luminescence
 Version  : 0.9.21
-Release  : 55
+Release  : 56
 URL      : https://cran.r-project.org/src/contrib/Luminescence_0.9.21.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Luminescence_0.9.21.tar.gz
 Summary  : Comprehensive Luminescence Dating Data Analysis
