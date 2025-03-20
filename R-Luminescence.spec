@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : R-Luminescence
-Version  : 1.0.0
-Release  : 67
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Luminescence_1.0.0.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Luminescence_1.0.0.tar.gz
+Version  : 1.0.1
+Release  : 68
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Luminescence_1.0.1.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Luminescence_1.0.1.tar.gz
 Summary  : Comprehensive Luminescence Dating Data Analysis
 Group    : Development/Tools
 License  : GPL-3.0
@@ -74,10 +74,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740181197
+export SOURCE_DATE_EPOCH=1742475561
 
 %install
-export SOURCE_DATE_EPOCH=1740181197
+export SOURCE_DATE_EPOCH=1742475561
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
